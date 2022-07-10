@@ -1,0 +1,111 @@
+.header_content{
+    width: 100%;
+    height: 100%;
+}
+header{
+width: 100%;
+display: grid;
+grid-template-columns: repeat(2,1fr);
+grid-template-rows: 1fr;
+grid-gap: 8px;
+}
+.coin_details,.card_content{
+    height: 100%;
+    width: 100%;
+    padding: 4px 8px;
+}
+.coin_info{
+    display: flex;
+    justify-content: space-between;
+}
+.coin_info div{
+    display: flex;
+    align-items: center;
+}
+.coin_info div img{
+    height: 90px;
+    object-fit: cover;
+    margin-right: 4px;
+}
+.coin_info div h1{
+    font-size: 2rem;
+}
+.value{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.4em;
+}
+.value h3{
+    font-size: 2.5rem;
+    margin-right: 8px;
+}
+.card_info{
+    padding: 4px 8px;
+    height: 100%;
+    max-width: 600px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.4);
+}
+.card_info h1{
+    font-size: 1.5rem;
+}
+.card_info p{
+    font-size: 0.9rem;
+    
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 120px;
+    margin-top: 2rem;
+   
+    padding: 12px 0px ;
+    grid-gap: 8px;
+}
+.card_det{
+padding: 0px 6px;
+box-shadow: 0px 0px 15px rgba(0,0,0,0.4);
+}
+
+.card_det .coin_detail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0px;
+}
+.coin_detail h5{
+    font-size: 1rem;
+}
+.card_det h2{
+    font-size: 1.4rem;
+    padding: 12px 0px;
+    text-align: center;
+}
+
+@media screen and (max-width: 770px) {
+    header{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap:20px;
+        grid-template-rows: repeat(2,1fr);
+    }
+   }
+
+   @media screen and (max-width: 450px) {
+    header{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap:20px;
+        grid-template-rows: repeat(4,1fr);
+    }
+   }

@@ -1,0 +1,109 @@
+.table thead tr th{
+    /* position: sticky; */
+}
+.table {
+    padding:12px 0px;  
+}
+.table thead tr th{
+    background: rgb(123, 0, 247);
+    font-weight: 500;
+}
+.table tbody tr td img{
+    height: 25px;
+    object-fit: cover;
+    margin-right: 4px;
+}
+.table tbody tr td{
+    padding-top:0.7rem;
+    background: #212121;
+}
+.table tbody tr:hover td{
+    background: rgba(123, 0, 247,0.5);
+    cursor: pointer;
+}
+.table tbody tr{
+    border-bottom: 0.1px solid #2C3034;
+}
+.table tbody tr:last-child{
+    border-bottom: none;
+}
+ .table tbody tr td .form-check .form-check-input,
+ .table thead tr th .form-check .form-check-input{
+    background: #2C3034 ;
+    border: 0.1px solid #2C3034 ;
+    outline: none;
+    color: #fff;
+    transition: 0.9s;
+}
+.table tbody tr td .form-check .form-check-input:hover,
+.table thead tr th .form-check .form-check-input:hover{
+    cursor: pointer;
+}
+.table tbody tr td .form-check .form-check-input:checked,
+.table thead tr th .form-check .form-check-input:checked{
+  background: rgb(123, 0, 247);
+  color: #fff;
+} 
+.table tbody tr td .form-check .form-check-input:checked[type=checkbox],
+.table thead tr th .form-check .form-check-input:checked[type=checkbox]{
+    background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 20 20%27%3e%3cpath fill=%27none%27 stroke=%27%23fff%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%273%27 d=%27M6 10l3 3l6-6%27/%3e%3c/svg%3e");
+}
+.table tbody{
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+}
+.up{
+    color:rgb(1, 255, 1);
+}
+.down{
+    color:red;
+}
+@media screen and (max-width: 690px) {
+    .table tbody tr td  div{
+        display: flex;
+        align-items: center;
+        /* flex-direction: column; */
+    }
+    .table tbody tr td  div img{
+        height: 40px;
+        width: 40px;
+        object-fit: cover;
+    }
+    .table thead tr .mobile,
+    .table tbody tr .mobile{
+        display: none;
+    }
+   }
+   @media screen and (max-width: 490px) {
+    .table tbody tr td  div{
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+    }
+    .table tbody tr td  div img{
+        display:none;
+    }
+    .table tbody tr td{
+        width: max-content;
+    }
+   }
+
+   @media screen and (max-width: 470px) {
+      .table{
+        width: 100%;
+    } 
+    .table tbody tr td  div{
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+    }
+    .table tbody tr td{
+        width: max-content;
+    }
+   }
+
+   @media screen and (max-width: 460px) {
+    .table thead tr .mini-mobile{
+     display: none;
+    }
+  
+   }

@@ -1,0 +1,72 @@
+.filterbar{
+    margin-top:2rem;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.btns,.select{
+    flex:0.5;
+}
+.btns button{
+    margin:0px 4px;
+}
+.select{
+    display: flex;
+    justify-content: flex-end;
+}
+.select select{
+    /* justify-content: flex-end; */
+    width: 50%;
+}
+.select .form-control{
+    background: none;
+    color:#fff;
+    border:0.1px solid #2C3034;
+}
+.select .form-control:focus{
+    box-shadow: none;
+}
+.select .form-control option{
+    background: #212121;
+    border: none;
+    color: #fff;
+}
+
+@media screen and (max-width: 770px) {
+    .filterbar{
+        display: flex;
+    }
+    .btns .btn{
+     padding: 2px 6px;
+    }
+   }
+
+   @media screen and (max-width: 520px) {
+    .filterbar{
+        display: flex;
+    }
+    .btns .btn{
+     padding: 1px 4px;
+    }
+   }
+   @media screen and (max-width: 490px) {
+    .filterbar{
+        display: flex;
+    }
+    .btns {
+        flex: 0.7;
+    }
+    .btns .btn{
+     padding: 1px 4px;
+    }
+   }
+
+   @media screen and (max-width: 490px) {
+    .btns {
+        flex: 0.9;
+    }
+    .btns .btn{
+        margin:0px 2px;
+        padding: 1px 3px;
+    }
+   }
